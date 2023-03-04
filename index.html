@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <title>Instagram</title>
+    <style>
+      @import url("css/default.css");
+      @import url("css/feed.css");
+      @import url("css/gnb.css");
+    </style>
+    <script>
+      let is_liked = true;
+      function like() {
+          $('#heart').attr('src', 'image/icons/12.png')
+          is_liked = false;
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="gnb flex-row">
+      <div class="gnb-content flex-row">
+        <div class="logo flex-row">
+          <img width="102" src="image/logo_instagram.png" />
+          <i class="bi bi-chevron-down"></i>
+        </div>
+        <div class="search-box flex-row">
+          <input type="text" placeholder="search" />
+        </div>
+        <div class="icons flex-row">
+          <img src="image/icons/1.png" alt="" />
+          <img src="image/icons/2.png" alt="" />
+          <img src="image/icons/3.png" alt="" />
+          <img src="image/icons/4.png" alt="" />
+          <img src="image/icons/5.png" alt="" />
+          <img width="32" src="image/icons/6.png" />
+        </div>
+      </div>
+    </div>
+    <div class="main flex-row">
+      <div class="feed flex-col">
+        <div class="profile flex-row">
+          <div class="img-wrap">
+            <img
+              width="32"
+              src="image/profile/1.png"
+            />
+          </div>
+          <p class="flex-col">
+            <span>Stevent Fransisco</span>
+            <span>Brisbane, QueensIand, Australia</span>
+          </p>
+          <img width="20" src="image/icons/7.png" />
+        </div>
+        <div class="imgs swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="image/post/1.png" /></div>
+            <div class="swiper-slide"><img src="image/post/2.png" /></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="feed-icons flex-row">
+          <img id="heart" onclick="like()" src="image/icons/5.png" />
+          <img src="image/icons/9.png" />
+          <img src="image/icons/2.png" />
+          <img src="image/icons/10.png" />
+        </div>
+        <div class="likes">50,479 Likes</div>
+        <div class="comments">
+          <span class="title">Stevent Fransisco</span>
+          "Color, shape, texture, negative space and a little bit of whimsy can
+          be the basis of great composition"
+          <span class="hashtag">#iPhone</span>
+        </div>
+        <div class="count">View all 169 comments</div>
+        <div class="time">20 hours ago</div>
+      </div>
+      <div class="account flex-col">
+        <div class="account-content">
+          <li class="flex-row">
+            <div class="img-warp">
+              <img width="56px" src="image/icons/6.png" />
+            </div>
+            <p class="flex-col">
+              <span>Stevent Fransisco</span>
+              <span>Frans</span>
+            </p>
+            <a href="#">Switch</a>
+          </li>
+          <li class="flex-row suggestion">
+            <span>Suggestion for you</span>
+            <a href="#">See All</a>
+          </li>
+          <li class="flex-row friends">
+            <div class="img-warp">
+              <img width="32px" src="image/follower/1.png" />
+            </div>
+            <p class="flex-col">
+              <span>Daffa</span>
+              <span>Popular</span>
+            </p>
+            <a href="#">Follow</a>
+          </li>
+          <li class="flex-row friends">
+            <div class="img-warp">
+              <img width="32px" src="image/follower/2.png" />
+            </div>
+            <p class="flex-col">
+              <span>Kelvin</span>
+              <span>Popular</span>
+            </p>
+            <a href="#">Follow</a>
+          </li>
+          <li class="flex-row friends">
+            <div class="img-warp">
+              <img width="32px" src="image/follower/3.png" />
+            </div>
+            <p class="flex-col">
+              <span>Syahrul</span>
+              <span>Popular</span>
+            </p>
+            <a href="#">Follow</a>
+          </li>
+          <li class="flex-row friends">
+            <div class="img-warp">
+              <img width="32px" src="image/follower/4.png" />
+            </div>
+            <p class="flex-col">
+              <span>Fawas</span>
+              <span>Popular</span>
+            </p>
+            <a href="#">Follow</a>
+          </li>
+          <li class="flex-row friends">
+            <div class="img-warp">
+              <img width="32px" src="image/follower/5.png" />
+            </div>
+            <p class="flex-col">
+              <span>Dapit</span>
+              <span>Popular</span>
+            </p>
+            <a href="#">Follow</a>
+          </li>
+        </div>
+        <div class="about">
+          <a href="#">About</a>
+          <a href="#">Help</a>
+          <a href="#">Press</a>
+          <a href="#">API</a>
+          <a href="#">Jobs</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Locations</a>
+          <a href="#">Language</a>
+          <a href="#">English</a>
+        </div>
+        <div class="name">© 2023 Instagram from Meta</div>
+      </div>
+    </div>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
